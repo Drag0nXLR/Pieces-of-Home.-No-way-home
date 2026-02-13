@@ -1,0 +1,180 @@
+[gd_scene load_steps=3 format=3 uid="uid://b02w3rvwtn5xa"]
+
+[ext_resource type="Script" uid="uid://c3efpytikx2hc" path="res://scripts/menus/settings.gd" id="1_del6v"]
+[ext_resource type="FontFile" uid="uid://cwe4aa2xja7fv" path="res://assets/fonts/FridayNightFunkin-Regular.ttf" id="2_erjg3"]
+
+[node name="settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_del6v")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 45
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_erjg3")
+theme_override_font_sizes/font_size = 86
+text = "SETTINGS"
+horizontal_alignment = 1
+
+[node name="SettingScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/SettingScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Cherkashi5" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "----------------------------------------------------------------------------------------------------------------"
+horizontal_alignment = 1
+
+[node name="SoundsLabel" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "-- SOUNDS --"
+horizontal_alignment = 1
+
+[node name="Cherkashi6" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "----------------------------------------------------------------------------------------------------------------"
+horizontal_alignment = 1
+
+[node name="VolumeSlider" type="HBoxContainer" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VolumeLabel" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer/VolumeSlider"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 28
+text = "Volume"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/SettingScrollContainer/VBoxContainer/VolumeSlider"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+
+[node name="VolumeSlider" type="HSlider" parent="VBoxContainer/SettingScrollContainer/VBoxContainer/VolumeSlider"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+step = 0.1
+
+[node name="MuteCheckButton" type="CheckButton" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Mute"
+
+[node name="Cherkashi3" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "----------------------------------------------------------------------------------------------------------------"
+horizontal_alignment = 1
+
+[node name="ResolutionLabel" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "-- GRAPICS --"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cherkashi4" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "----------------------------------------------------------------------------------------------------------------"
+horizontal_alignment = 1
+
+[node name="ResolutionChanger" type="OptionButton" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+alignment = 1
+selected = 0
+item_count = 5
+popup/item_0/text = "1920x1080"
+popup/item_0/id = 0
+popup/item_1/text = "1600x900"
+popup/item_1/id = 1
+popup/item_2/text = "1200x800"
+popup/item_2/id = 2
+popup/item_3/text = "1200x720"
+popup/item_3/id = 3
+popup/item_4/text = "1024x768"
+popup/item_4/id = 4
+
+[node name="Cherkashi7" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 37
+text = "-------------------------------------------------------------------------------------------------------------------------------------------------------------"
+horizontal_alignment = 1
+
+[node name="LanguageChanger" type="HBoxContainer" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer/LanguageChanger"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Language"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/SettingScrollContainer/VBoxContainer/LanguageChanger"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/SettingScrollContainer/VBoxContainer/LanguageChanger"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Cherkashi" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "----------------------------------------------------------------------------------------------------------------"
+horizontal_alignment = 1
+
+[node name="GameplayLabel2" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "-- GAMEPLAY --"
+horizontal_alignment = 1
+
+[node name="Cherkashi2" type="Label" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "----------------------------------------------------------------------------------------------------------------"
+horizontal_alignment = 1
+
+[node name="MarginContainer4" type="MarginContainer" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 45
+
+[node name="Button" type="Button" parent="VBoxContainer/SettingScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_erjg3")
+theme_override_font_sizes/font_size = 31
+text = "KEYBINDS"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Back"
+
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

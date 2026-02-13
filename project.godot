@@ -10,6 +10,14 @@ config_version=5
 
 [application]
 
-config/name="Pieces of home. Escape from earth"
+config/name="Pieces of home. No way home"
+config/tags=PackedStringArray("game")
+run/main_scene="uid://bm00pb8wurxhs"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3

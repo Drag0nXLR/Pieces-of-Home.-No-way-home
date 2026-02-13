@@ -1,1 +1,4 @@
-res://scenes/menus/main_menu.tscn
+res://scenes/menus/settings.tscn
+res://scenes/menus/keybinds.tscn
+res://scenes/menus/input_button.tscn
+res://scripts/menus/settings.gd
